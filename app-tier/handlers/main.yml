@@ -1,0 +1,8 @@
+---
+# handlers file for roles/app-tier
+
+- name: restart_httpd
+  service:
+   name: "{{ httpd_srv }}"
+   state: restarted
+
